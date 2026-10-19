@@ -31,8 +31,6 @@
 .architecture-arrow{align-self:center;font-weight:900;font-size:1.2rem}
 .demo-frame{width:100%;aspect-ratio:16/9;border:2px dashed var(--ink);background:var(--yellow);display:grid;place-items:center;text-align:center;padding:20px}
 .demo-frame iframe{width:100%;height:100%;border:0}
-.demo-placeholder strong{display:block;font-size:1.2rem;margin-bottom:8px}
-.demo-placeholder p{margin:0}
 .dialog-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
 @media(max-width:650px){.project-detail-grid{grid-template-columns:1fr}.project-detail-block.full{grid-column:auto}.project-modal{padding:10px}.project-dialog{max-height:94vh;box-shadow:5px 5px 0 var(--yellow)}}
 @media(prefers-reduced-motion:reduce){.project{transition:none}}
@@ -50,9 +48,10 @@
 .skill[hidden]{display:none}.skill:hover,.skill:focus-visible{transform:translateY(-5px) rotate(0deg) scale(1.06);box-shadow:5px 7px 0 var(--ink);z-index:2;outline:none}.skill.popped{transform:rotate(0deg) scale(1.12);filter:saturate(1.3);box-shadow:0 0 0 5px var(--yellow),5px 5px 0 var(--ink);animation:pop-in .25s ease-out}
 .skill-controls{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}.skill-filter{border:2px solid var(--ink);padding:7px 10px;background:var(--paper);font-size:.75rem;font-weight:700}.skill-filter.active,.skill-filter:hover{background:var(--ink);color:white}.skill-legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:15px;font-family:'DM Mono',monospace;font-size:.65rem;text-transform:uppercase}.skill-legend span{display:inline-flex;align-items:center;gap:5px}.legend-dot{width:9px;height:9px;border:1.5px solid var(--ink);border-radius:50%;display:inline-block}.skill-hint{font-family:'DM Mono',monospace;font-size:.68rem;text-transform:uppercase;margin:12px 0 0;opacity:.75}
 @keyframes skill-float{0%,100%{translate:0 0}50%{translate:0 -3px}}@keyframes pop-in{0%{scale:.8}70%{scale:1.18}100%{scale:1.12}}
-@media(max-width:760px){.skill-explosion{padding:13px;min-height:unset}.skill-cloud{min-height:unset;gap:8px;padding:10px 0}.skill-explosion:before{width:220px;height:220px}.skill-explosion:after{width:300px;height:300px}.skill-core{width:82px;height:82px;flex-basis:82px;font-size:.85rem}.skill{font-size:.75rem;min-height:36px;padding:8px 10px;box-shadow:2px 2px 0 var(--ink)}.skill-legend{gap:8px;font-size:.58rem}}.timeline{border-top:var(--line)}.experience{display:grid;grid-template-columns:.7fr 1.3fr;gap:30px;padding:27px 0;border-bottom:var(--line)}.exp-date{font-family:'DM Mono',monospace;font-size:.8rem}.experience h3{font-size:1.65rem;margin:0 0 5px}.experience .company{font-weight:700;margin-bottom:13px}.experience p,.experience li{line-height:1.6}.experience ul{padding-left:20px}.cert-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.cert{border:var(--line);padding:20px;background:white;min-height:190px;box-shadow:4px 4px 0 var(--ink)}.cert:nth-child(2n){background:var(--blue)}.cert:nth-child(3n){background:var(--yellow)}.cert .issuer{font-family:'DM Mono',monospace;font-size:.75rem}.cert h3{font-size:1.18rem;line-height:1.3;margin:25px 0 12px}.contact{background:var(--yellow);border-block:var(--line)}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-.08em;line-height:.9;margin:0 0 18px}.contact p{max-width:540px;line-height:1.6}.contact-links{display:flex;flex-direction:column;gap:10px;min-width:210px}.contact-links a{font-weight:700}.footer{padding:22px 0;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-family:'DM Mono',monospace;font-size:.75rem}.note{font-size:.8rem;color:#555}.arrow{font-size:1.2em}
+@media(max-width:760px){.skill-explosion{padding:13px;min-height:unset}.skill-cloud{min-height:unset;gap:8px;padding:10px 0}.skill-explosion:before{width:220px;height:220px}.skill-explosion:after{width:300px;height:300px}.skill-core{width:82px;height:82px;flex-basis:82px;font-size:.85rem}.skill{font-size:.75rem;min-height:36px;padding:8px 10px;box-shadow:2px 2px 0 var(--ink)}.skill-legend{gap:8px;font-size:.58rem}}.timeline{border-top:var(--line)}.experience{display:grid;grid-template-columns:.7fr 1.3fr;gap:30px;padding:27px 0;border-bottom:var(--line)}.exp-date{font-family:'DM Mono',monospace;font-size:.8rem}.experience h3{font-size:1.65rem;margin:0 0 5px}.experience .company{font-weight:700;margin-bottom:13px}.experience p,.experience li{line-height:1.6}.experience ul{padding-left:20px}.experience h4{font-size:1rem;margin:18px 0 8px}.experience .exp-location{font-size:.9rem;margin:8px 0;color:var(--muted)}.cert-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.cert{border:var(--line);padding:20px;background:white;min-height:190px;box-shadow:4px 4px 0 var(--ink)}.cert:nth-child(2n){background:var(--blue)}.cert:nth-child(3n){background:var(--yellow)}.cert .issuer{font-family:'DM Mono',monospace;font-size:.75rem}.cert h3{font-size:1.18rem;line-height:1.3;margin:25px 0 12px}.contact{background:var(--yellow);border-block:var(--line)}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-.08em;line-height:.9;margin:0 0 18px}.contact p{max-width:540px;line-height:1.6}.contact-links{display:flex;flex-direction:column;gap:10px;min-width:210px}.contact-links a{font-weight:700}.footer{padding:22px 0;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-family:'DM Mono',monospace;font-size:.75rem}.note{font-size:.8rem;color:#555}.arrow{font-size:1.2em}
 @media(max-width:760px){.topbar{align-items:flex-start;gap:20px;flex-direction:column}nav{gap:14px}.hero{grid-template-columns:1fr;padding:50px 0 40px}.hero-art{min-height:270px}.orbit{width:220px;height:220px}.orbit-core{font-size:4rem}.section-head{align-items:flex-start;flex-direction:column}.project-grid,.about-grid,.cert-grid{grid-template-columns:1fr}.experience{grid-template-columns:1fr;gap:10px}.contact-inner{align-items:flex-start;flex-direction:column}section{padding:58px 0}.project{min-height:unset}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.skill{animation:none;transition:none}}
+.project-detail-block[hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -66,7 +65,7 @@
     <div class="eyebrow mono"><span class="dot"></span> Open to building what matters</div>
     <h1>Curious by<br>nature.<br><span class="stroke">Builder</span><br>by choice.</h1>
     <p>I’m <strong>Parth Deorukhkar</strong> — an engineer who moves between data, AI, automation, and product thinking. I turn messy problems into useful systems, from analytics workflows to AI-powered applications.</p>
-    <div class="hero-actions"><a class="btn" href="#work">Explore my work <span class="arrow">↘</span></a><a class="btn secondary" href="mailto:parthdeorukhkar2@gmail.com">Let’s talk ↗</a></div>
+    <div class="hero-actions"><a class="btn" href="#work">Explore my work <span class="arrow">↘</span></a></div>
   </div>
   <div class="hero-art" aria-label="Abstract geometric monogram">
     <div class="orbit"><div class="orbit-core">P.</div></div>
@@ -96,35 +95,35 @@
       <h3>RAG Financial Document Analyzer</h3>
       <p>A document question-answering app that combines retrieval with language models so users can query financial documents and find relevant context instead of manually scanning every page.</p>
       <div class="tags"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">ChromaDB</span><span class="tag">Streamlit</span></div>
-      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=Financial%20Document%20Analyzer">Ask for demo ↗</a>
+      <a class="project-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=parthdeorukhkar2%40gmail.com&su=Financial%20Document%20Analyzer">Ask for demo ↗</a>
     </article>
     <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="data gtm fde">
       <div class="project-top"><span class="project-num">03 / MARKETING INTELLIGENCE</span><span class="project-icon">↗</span></div>
       <h3>Marketing Analytics WhatsApp Bot</h3>
       <p>A conversational analytics workflow for marketing campaign data. Ask business questions, translate intent into validated SQL, and surface campaign spend and conversion insights through a familiar chat interface.</p>
       <div class="tags"><span class="tag">FastAPI</span><span class="tag">SQL</span><span class="tag">LLM</span><span class="tag">Twilio</span></div>
-      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=Marketing%20Analytics%20Bot">Ask for demo ↗</a>
+      <a class="project-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=parthdeorukhkar2%40gmail.com&su=Marketing%20Analytics%20Bot">Ask for demo ↗</a>
     </article>
     <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="ai fde automation">
       <div class="project-top"><span class="project-num">04 / PEOPLE OPS</span><span class="project-icon">✳</span></div>
       <h3>HR Automation System</h3>
       <p>A recruitment workflow concept spanning resume intake, candidate shortlisting, HR review, interview scheduling, and candidate communication—with a retrieval-based assistant to help HR query candidate information.</p>
       <div class="tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">RAG</span><span class="tag">Workflow design</span></div>
-      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=HR%20Automation%20System">Discuss the build ↗</a>
+      <a class="project-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=parthdeorukhkar2%40gmail.com&su=HR%20Automation%20System">Discuss the build ↗</a>
     </article>
     <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="data ai">
       <div class="project-top"><span class="project-num">05 / PATTERN DISCOVERY</span><span class="project-icon">⌁</span></div>
       <h3>Social Media Hashtag Clustering</h3>
       <p>Explored hashtag co-occurrence and association patterns to uncover which topics travel together, using support, lift, similarity, and clustering techniques to turn noisy social data into patterns.</p>
       <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Apriori</span><span class="tag">Clustering</span></div>
-      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=Hashtag%20Clustering">Ask about the project ↗</a>
+      <a class="project-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=parthdeorukhkar2%40gmail.com&su=Hashtag%20Clustering">Ask about the project ↗</a>
     </article>
     <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="automation fde gtm">
       <div class="project-top"><span class="project-num">06 / BUSINESS AUTOMATION</span><span class="project-icon">▣</span></div>
       <h3>QuickBooks Workflow Automation</h3>
       <p>Automated accounting operations using UiPath and API integrations, including invoice and customer workflows—connecting repetitive business processes with dependable automation.</p>
       <div class="tags"><span class="tag">UiPath</span><span class="tag">RPA</span><span class="tag">APIs</span><span class="tag">QuickBooks</span></div>
-      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=QuickBooks%20Automation">Discuss the workflow ↗</a>
+      <a class="project-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=parthdeorukhkar2%40gmail.com&su=QuickBooks%20Automation">Discuss the workflow ↗</a>
     </article>
   </div>
 </div>
@@ -163,15 +162,43 @@
   <div class="section-head"><h2>Where I’ve<br>put in the work.</h2><p>Hands-on experience building automation and data-driven applications—not just collecting buzzwords.</p></div>
   <div class="timeline">
     <article class="experience">
-      <div><div class="exp-date">2025 · INTERNSHIP</div><p class="note">Dates can be refined if needed</p></div>
-      <div><h3>Software Intern</h3><div class="company">Infintrix Globals Limited</div><ul><li>Developed intelligent automation and data-driven enterprise application workflows.</li><li>Built a Medical Report Analysis System using machine learning techniques.</li><li>Implemented QuickBooks automation using UiPath robotic process automation and application programming interface integrations.</li><li>Designed backend workflows with an emphasis on scalability and reducing repetitive operational effort.</li></ul><div class="tags"><span class="tag">Machine Learning</span><span class="tag">UiPath</span><span class="tag">API Integration</span><span class="tag">Backend Workflows</span></div></div>
+      <div>
+        <div class="exp-date">AUG 2025 – JAN 2026 · 6 MONTHS</div>
+        <p class="exp-location">Mumbai</p>
+      </div>
+      <div>
+        <h3>Software Engineer Intern</h3>
+        <div class="company">Infintrix Globals Limited · Internship</div>
+        <p>Contributed to the successful implementation of automation and AI-powered solutions spanning accounting workflow automation and medical report analysis.</p>
+
+        <h4>1. QuickBooks Accounting Automation</h4>
+        <ul>
+          <li>Implemented end-to-end accounting automation workflows for QuickBooks, enabling users to initiate accounting operations through WhatsApp messages.</li>
+          <li>Integrated Twilio for WhatsApp communication, Amazon Web Services (AWS) Simple Storage Service (S3) for cloud storage, Python scripts for processing, and Robotic Process Automation (RPA) for interacting with QuickBooks.</li>
+          <li>Developed workflows supporting invoice retrieval, report generation, and customer and item record management.</li>
+          <li>Connected WhatsApp, AWS, Python, and QuickBooks into a request-response pipeline, allowing users to submit requests conversationally and receive results through WhatsApp.</li>
+          <li>Worked on API integrations and automation logic to connect communication services with accounting operations.</li>
+        </ul>
+
+        <h4>2. AI-Powered Medical Report Analysis</h4>
+        <ul>
+          <li>Contributed to the implementation of a medical report analysis system using artificial intelligence and machine learning techniques.</li>
+          <li>Worked on analyzing current medical reports against historical reports to identify changes in reported medical information.</li>
+          <li>Supported the development and integration of report analysis and comparison workflows to facilitate the review of medical information over time.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">QuickBooks</span><span class="tag">WhatsApp</span><span class="tag">Twilio</span>
+          <span class="tag">AWS S3</span><span class="tag">Python</span><span class="tag">RPA</span>
+          <span class="tag">API Integration</span><span class="tag">Machine Learning</span>
+        </div>
+      </div>
     </article>
   </div>
 </div>
 </section>
 <section id="certifications">
 <div class="wrap">
-  <div class="section-head"><h2>Proof of learning.</h2><p>Courses and credentials that complement the projects. Add credential links when you publish.</p></div>
+  <div class="section-head"><h2>Proof of learning.</h2><p>Selected courses and credentials that complement the projects.</p></div>
   <div class="cert-grid">
     <article class="cert"><div class="issuer">IBM</div><h3>Exploratory Data Analysis for Machine Learning</h3><div class="mono">Data · Feature understanding</div></article>
     <article class="cert"><div class="issuer">DeepLearning.AI</div><h3>Supervised Machine Learning: Regression and Classification</h3><div class="mono">Machine learning</div></article>
@@ -179,13 +206,13 @@
     <article class="cert"><div class="issuer">NVIDIA</div><h3>Building Transformer-Based NLP Applications</h3><div class="mono">Natural language processing</div></article>
     <article class="cert"><div class="issuer">NVIDIA</div><h3>Building LLM Applications with Prompt Engineering</h3><div class="mono">Large language models</div></article>
   </div>
-  <p class="note" style="margin-top:22px">Credential verification links and completion dates are intentionally omitted until confirmed.</p>
+
 </div>
 </section>
 <section class="contact" id="contact">
 <div class="wrap contact-inner">
-  <div><div class="mono">Got a problem worth solving?</div><h2>Let’s build<br>something useful.</h2><p>Open to conversations around AI engineering, data, automation, forward-deployed work, and go-to-market engineering.</p><a class="btn secondary" href="mailto:parthdeorukhkar2@gmail.com">Email me ↗</a></div>
-  <div class="contact-links"><a href="mailto:parthdeorukhkar2@gmail.com">parthdeorukhkar2@gmail.com ↗</a><a href="https://github.com/parthdeorukhkar" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/parth-deorukhkar" target="_blank" rel="noreferrer">LinkedIn ↗</a><p class="note">Replace or verify profile URLs before launch.</p></div>
+  <div><div class="mono">Got a problem worth solving?</div><h2>Let’s build<br>something useful.</h2><p>Open to conversations around AI engineering, data, automation, forward-deployed work, and go-to-market engineering.</p></div>
+  <div class="contact-links"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=parthdeorukhkar2%40gmail.com">parthdeorukhkar2@gmail.com ↗</a><a href="https://github.com/parthdeorukhkar" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://in.linkedin.com/in/parth-deorukhkar" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
 </div>
 </section>
 
@@ -197,10 +224,10 @@
     </div>
     <div class="project-detail-grid">
       <article class="project-detail-block full"><h3>01 / Overview</h3><p id="projectDialogDescription"></p></article>
-      <article class="project-detail-block full"><h3>02 / Architecture</h3><p class="note">High-level workflow based on the project description; update the steps if your implementation differs.</p><div class="architecture-flow" id="projectDialogArchitecture"></div></article>
+      <article class="project-detail-block full"><h3>02 / Architecture</h3><div class="architecture-flow" id="projectDialogArchitecture"></div></article>
       <article class="project-detail-block"><h3>03 / Technology stack</h3><div class="tags" id="projectDialogStack"></div></article>
       <article class="project-detail-block"><h3>04 / What it demonstrates</h3><ul id="projectDialogHighlights"></ul></article>
-      <article class="project-detail-block full"><h3>05 / Demo video</h3><div class="demo-frame" id="projectDemoFrame"><div class="demo-placeholder"><strong>Demo video slot</strong><p>Add a YouTube video ID to the project details in the page script to embed your walkthrough here.</p></div></div></article>
+      <article class="project-detail-block full" id="projectDemoSection" hidden><h3>05 / Demo video</h3><div class="demo-frame" id="projectDemoFrame"></div></article>
     </div>
     <div class="dialog-actions"><a class="btn" id="projectDialogRepo" href="#" target="_blank" rel="noopener noreferrer">View source code ↗</a><a class="btn secondary" id="projectDialogLive" href="#" target="_blank" rel="noopener noreferrer" hidden>Open live demo ↗</a></div>
   </section>
@@ -347,7 +374,9 @@ function openProjectDetails(card) {
   });
 
   const demo = document.getElementById('projectDemoFrame');
+  const demoSection = document.getElementById('projectDemoSection');
   demo.replaceChildren();
+  demoSection.hidden = !details.videoId;
   if (details.videoId) {
     const iframe = document.createElement('iframe');
     iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(details.videoId);
@@ -356,15 +385,6 @@ function openProjectDetails(card) {
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     iframe.allowFullscreen = true;
     demo.appendChild(iframe);
-  } else {
-    const placeholder = document.createElement('div');
-    placeholder.className = 'demo-placeholder';
-    const strong = document.createElement('strong');
-    strong.textContent = 'Demo video coming soon';
-    const p = document.createElement('p');
-    p.textContent = 'Add a YouTube video ID in this project’s videoId field in the page script to embed the walkthrough.';
-    placeholder.append(strong, p);
-    demo.appendChild(placeholder);
   }
 
   const repo = document.getElementById('projectDialogRepo');
