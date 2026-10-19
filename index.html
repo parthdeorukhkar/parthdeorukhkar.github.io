@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f0e8">
+<meta name="description" content="Parth Deorukhkar — AI engineer, data thinker, and builder of useful systems.">
+<title>Parth Deorukhkar — Polymath in Progress</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f0e8;--ink:#171717;--yellow:#f4e64b;--blue:#8cb8ff;--pink:#ff9db8;--green:#b6f2a1;--line:3px solid var(--ink);--shadow:6px 6px 0 var(--ink)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Space Grotesk',sans-serif}a{color:inherit}button{font:inherit;cursor:pointer}.mono{font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.04em;font-size:.75rem}.wrap{width:min(1180px,92%);margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:var(--line)}.brand{font-weight:700;text-decoration:none;font-size:1.1rem}.brand span{background:var(--yellow);padding:4px 7px;border:2px solid var(--ink)}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.9rem;font-weight:600}nav a:hover{text-decoration:underline;text-decoration-thickness:3px}.hero{padding:72px 0 54px;display:grid;grid-template-columns:1.5fr .8fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;background:var(--green);border:2px solid var(--ink);padding:8px 11px;box-shadow:3px 3px 0 var(--ink)}.dot{width:9px;height:9px;border-radius:50%;background:#18863b;display:inline-block}.hero h1{font-size:clamp(3.4rem,8vw,7.6rem);line-height:.88;letter-spacing:-.085em;margin:28px 0 24px;font-weight:700}.hero h1 .stroke{-webkit-text-stroke:2px var(--ink);color:transparent}.hero p{font-size:1.12rem;line-height:1.65;max-width:660px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 17px;border:var(--line);background:var(--yellow);box-shadow:4px 4px 0 var(--ink);font-weight:700;text-decoration:none;transition:.15s transform,.15s box-shadow}.btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}.btn.secondary{background:var(--paper)}.hero-art{position:relative;min-height:340px;display:grid;place-items:center}.orbit{width:270px;height:270px;border:var(--line);border-radius:50%;display:grid;place-items:center;position:relative;background:var(--blue);transform:rotate(-9deg);box-shadow:var(--shadow)}.orbit:before,.orbit:after{content:"";position:absolute;border:2px solid var(--ink);border-radius:50%;inset:24px}.orbit:after{inset:53px;background:var(--yellow)}.orbit-core{z-index:2;font-size:5rem;font-weight:700;letter-spacing:-.1em;transform:rotate(9deg)}.sticker{position:absolute;border:var(--line);padding:10px 13px;font-weight:700;box-shadow:4px 4px 0 var(--ink);z-index:3;transform:rotate(7deg)}.sticker.one{background:var(--pink);top:18px;right:5px}.sticker.two{background:var(--green);bottom:25px;left:0;transform:rotate(-8deg)}.ticker{border-block:var(--line);background:var(--yellow);overflow:hidden;padding:13px 0;white-space:nowrap;font-weight:700;font-size:1rem}.ticker-track{display:inline-block;animation:scroll 28s linear infinite}.ticker span{padding:0 25px}@keyframes scroll{to{transform:translateX(-50%)}}section{padding:78px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.section-head h2{font-size:clamp(2.4rem,5vw,4.5rem);letter-spacing:-.07em;line-height:.95;margin:0}.section-head p{max-width:380px;line-height:1.55;margin:0}.roles{background:var(--ink);color:var(--paper)}.roles .section-head p{color:#d0ccc5}.filters{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0}.filter{border:2px solid var(--paper);background:transparent;color:var(--paper);padding:10px 13px;font-weight:700}.filter.active,.filter:hover{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.project{background:var(--paper);color:var(--ink);border:var(--line);box-shadow:6px 6px 0 #777;padding:23px;display:flex;flex-direction:column;min-height:300px}.project[hidden]{display:none}.project-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.project-num{font-family:'DM Mono',monospace;font-size:.8rem}.project-icon{font-size:2rem;border:2px solid var(--ink);width:54px;height:54px;display:grid;place-items:center;background:var(--yellow)}.project h3{font-size:1.65rem;letter-spacing:-.04em;margin:23px 0 10px}.project p{line-height:1.6;margin:0 0 18px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto;padding-top:8px}.tag{border:1.5px solid var(--ink);padding:5px 8px;font-size:.75rem;font-family:'DM Mono',monospace}.project .project-link{margin-top:18px;font-weight:700;text-decoration-thickness:2px}.project-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:10px}.project-actions .project-link{margin-top:8px}.project-note{font-size:.82rem;color:#555;font-weight:600}
+.project{cursor:pointer;transition:transform .16s ease,box-shadow .16s ease}
+.project:hover,.project:focus-visible{transform:translate(-2px,-2px);box-shadow:9px 9px 0 #777;outline:3px solid var(--yellow);outline-offset:3px}
+.project a,.project button{position:relative;z-index:2}
+.project-modal{position:fixed;inset:0;z-index:1000;background:rgba(23,23,23,.78);display:none;align-items:center;justify-content:center;padding:20px}
+.project-modal.open{display:flex}
+.project-dialog{position:relative;width:min(920px,100%);max-height:90vh;overflow:auto;background:var(--paper);border:3px solid var(--ink);box-shadow:10px 10px 0 var(--yellow);padding:clamp(20px,4vw,38px)}
+.project-dialog:focus{outline:none}
+.project-dialog-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;border-bottom:3px solid var(--ink);padding-bottom:18px;margin-bottom:22px}
+.project-dialog h2{font-size:clamp(2rem,5vw,3.8rem);line-height:.95;letter-spacing:-.07em;margin:8px 0 0}
+.project-close{flex:0 0 auto;border:2px solid var(--ink);background:var(--pink);font-weight:800;font-size:1.35rem;width:44px;height:44px;box-shadow:3px 3px 0 var(--ink)}
+.project-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.project-detail-block{border:2px solid var(--ink);padding:18px;background:#fffdf7}
+.project-detail-block h3{font-size:1.15rem;margin:0 0 10px}
+.project-detail-block p,.project-detail-block li{line-height:1.6}
+.project-detail-block ul{padding-left:20px;margin-bottom:0}
+.project-detail-block.full{grid-column:1/-1}
+.architecture-flow{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.architecture-step{flex:1 1 130px;border:2px solid var(--ink);background:var(--blue);padding:12px;font-weight:700;text-align:center;display:grid;place-items:center;min-height:70px}
+.architecture-arrow{align-self:center;font-weight:900;font-size:1.2rem}
+.demo-frame{width:100%;aspect-ratio:16/9;border:2px dashed var(--ink);background:var(--yellow);display:grid;place-items:center;text-align:center;padding:20px}
+.demo-frame iframe{width:100%;height:100%;border:0}
+.demo-placeholder strong{display:block;font-size:1.2rem;margin-bottom:8px}
+.demo-placeholder p{margin:0}
+.dialog-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+@media(max-width:650px){.project-detail-grid{grid-template-columns:1fr}.project-detail-block.full{grid-column:auto}.project-modal{padding:10px}.project-dialog{max-height:94vh;box-shadow:5px 5px 0 var(--yellow)}}
+@media(prefers-reduced-motion:reduce){.project{transition:none}}
+.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px;align-items:stretch}.about-card{border:var(--line);box-shadow:var(--shadow);padding:26px;background:var(--pink)}.about-card h3{font-size:2rem;letter-spacing:-.06em;margin:10px 0}.about-card p{line-height:1.65}
+.skill-explosion{position:relative;overflow:hidden;border:var(--line);background:#fffdf7;box-shadow:var(--shadow);padding:20px;min-height:520px;isolation:isolate}
+.skill-explosion:before,.skill-explosion:after{content:"";position:absolute;z-index:-1;border:2px dashed #171717;border-radius:50%;pointer-events:none}
+.skill-explosion:before{width:330px;height:330px;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-14deg)}
+.skill-explosion:after{width:430px;height:430px;left:50%;top:50%;transform:translate(-50%,-50%) rotate(18deg);opacity:.35}
+.skill-cloud{display:flex;flex-wrap:wrap;align-content:center;align-items:center;justify-content:center;gap:9px;min-height:475px;position:relative}
+.skill-core{display:inline-flex;align-items:center;justify-content:center;flex-direction:column;width:105px;height:105px;flex:0 0 105px;border:var(--line);border-radius:50%;background:var(--ink);color:white;text-align:center;font-weight:700;line-height:1.05;box-shadow:4px 4px 0 var(--yellow);transform:rotate(-8deg);margin:4px 7px}
+.skill-core small{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.08em;margin-top:6px;color:var(--yellow)}
+.skill{--tilt:0deg;--bubble-bg:var(--yellow);display:inline-flex;align-items:center;justify-content:center;text-align:center;max-width:100%;min-height:42px;padding:10px 13px;border:2px solid var(--ink);border-radius:999px;font-size:.85rem;line-height:1.15;font-weight:700;background:var(--bubble-bg);box-shadow:3px 3px 0 var(--ink);transform:rotate(var(--tilt));transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;cursor:pointer;animation:skill-float 5s ease-in-out infinite;animation-delay:var(--delay,0s)}
+.skill[data-category="ai"]{--bubble-bg:var(--pink)}.skill[data-category="data"]{--bubble-bg:var(--blue)}.skill[data-category="engineering"]{--bubble-bg:var(--green)}.skill[data-category="automation"]{--bubble-bg:var(--yellow)}.skill[data-category="product"]{--bubble-bg:#f7b85a}
+.skill:nth-child(4n){--tilt:2deg}.skill:nth-child(4n + 1){--tilt:-3deg}.skill:nth-child(4n + 2){--tilt:1deg}.skill:nth-child(4n + 3){--tilt:-1deg}
+.skill[hidden]{display:none}.skill:hover,.skill:focus-visible{transform:translateY(-5px) rotate(0deg) scale(1.06);box-shadow:5px 7px 0 var(--ink);z-index:2;outline:none}.skill.popped{transform:rotate(0deg) scale(1.12);filter:saturate(1.3);box-shadow:0 0 0 5px var(--yellow),5px 5px 0 var(--ink);animation:pop-in .25s ease-out}
+.skill-controls{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}.skill-filter{border:2px solid var(--ink);padding:7px 10px;background:var(--paper);font-size:.75rem;font-weight:700}.skill-filter.active,.skill-filter:hover{background:var(--ink);color:white}.skill-legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:15px;font-family:'DM Mono',monospace;font-size:.65rem;text-transform:uppercase}.skill-legend span{display:inline-flex;align-items:center;gap:5px}.legend-dot{width:9px;height:9px;border:1.5px solid var(--ink);border-radius:50%;display:inline-block}.skill-hint{font-family:'DM Mono',monospace;font-size:.68rem;text-transform:uppercase;margin:12px 0 0;opacity:.75}
+@keyframes skill-float{0%,100%{translate:0 0}50%{translate:0 -3px}}@keyframes pop-in{0%{scale:.8}70%{scale:1.18}100%{scale:1.12}}
+@media(max-width:760px){.skill-explosion{padding:13px;min-height:unset}.skill-cloud{min-height:unset;gap:8px;padding:10px 0}.skill-explosion:before{width:220px;height:220px}.skill-explosion:after{width:300px;height:300px}.skill-core{width:82px;height:82px;flex-basis:82px;font-size:.85rem}.skill{font-size:.75rem;min-height:36px;padding:8px 10px;box-shadow:2px 2px 0 var(--ink)}.skill-legend{gap:8px;font-size:.58rem}}.timeline{border-top:var(--line)}.experience{display:grid;grid-template-columns:.7fr 1.3fr;gap:30px;padding:27px 0;border-bottom:var(--line)}.exp-date{font-family:'DM Mono',monospace;font-size:.8rem}.experience h3{font-size:1.65rem;margin:0 0 5px}.experience .company{font-weight:700;margin-bottom:13px}.experience p,.experience li{line-height:1.6}.experience ul{padding-left:20px}.cert-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.cert{border:var(--line);padding:20px;background:white;min-height:190px;box-shadow:4px 4px 0 var(--ink)}.cert:nth-child(2n){background:var(--blue)}.cert:nth-child(3n){background:var(--yellow)}.cert .issuer{font-family:'DM Mono',monospace;font-size:.75rem}.cert h3{font-size:1.18rem;line-height:1.3;margin:25px 0 12px}.contact{background:var(--yellow);border-block:var(--line)}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-.08em;line-height:.9;margin:0 0 18px}.contact p{max-width:540px;line-height:1.6}.contact-links{display:flex;flex-direction:column;gap:10px;min-width:210px}.contact-links a{font-weight:700}.footer{padding:22px 0;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-family:'DM Mono',monospace;font-size:.75rem}.note{font-size:.8rem;color:#555}.arrow{font-size:1.2em}
+@media(max-width:760px){.topbar{align-items:flex-start;gap:20px;flex-direction:column}nav{gap:14px}.hero{grid-template-columns:1fr;padding:50px 0 40px}.hero-art{min-height:270px}.orbit{width:220px;height:220px}.orbit-core{font-size:4rem}.section-head{align-items:flex-start;flex-direction:column}.project-grid,.about-grid,.cert-grid{grid-template-columns:1fr}.experience{grid-template-columns:1fr;gap:10px}.contact-inner{align-items:flex-start;flex-direction:column}section{padding:58px 0}.project{min-height:unset}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.skill{animation:none;transition:none}}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="brand" href="#top">PARTH<span>™</span></a>
+  <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#contact">Contact ↗</a></nav>
+</header>
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow mono"><span class="dot"></span> Open to building what matters</div>
+    <h1>Curious by<br>nature.<br><span class="stroke">Builder</span><br>by choice.</h1>
+    <p>I’m <strong>Parth Deorukhkar</strong> — an engineer who moves between data, AI, automation, and product thinking. I turn messy problems into useful systems, from analytics workflows to AI-powered applications.</p>
+    <div class="hero-actions"><a class="btn" href="#work">Explore my work <span class="arrow">↘</span></a><a class="btn secondary" href="mailto:parthdeorukhkar2@gmail.com">Let’s talk ↗</a></div>
+  </div>
+  <div class="hero-art" aria-label="Abstract geometric monogram">
+    <div class="orbit"><div class="orbit-core">P.</div></div>
+    <div class="sticker one">MULTI-TOOL<br>THINKER ✳</div><div class="sticker two">DATA → DECISIONS</div>
+  </div>
+</section>
+<div class="ticker"><div class="ticker-track"><span>AI ENGINEERING ✳</span><span>DATA STORYTELLING ↗</span><span>PRODUCT THINKING ✳</span><span>WORKFLOW AUTOMATION ↗</span><span>GTM SYSTEMS ✳</span><span>AI ENGINEERING ✳</span><span>DATA STORYTELLING ↗</span><span>PRODUCT THINKING ✳</span><span>WORKFLOW AUTOMATION ↗</span><span>GTM SYSTEMS ✳</span></div></div>
+<section class="roles" id="work">
+<div class="wrap">
+  <div class="section-head"><h2>Different hats.<br>Same mission.</h2><p>I’m not trying to fit one box. Explore projects through the lens of the role they best support.</p></div>
+  <div class="filters" role="group" aria-label="Filter projects by role">
+    <button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="ai">AI Engineer</button><button class="filter" data-filter="data">Data Analyst</button><button class="filter" data-filter="fde">Forward Deployed Engineer</button><button class="filter" data-filter="gtm">Go-To-Market Engineer</button><button class="filter" data-filter="automation">Automation</button>
+  </div>
+  <div class="project-grid" id="projectGrid">
+    <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="ai fde">
+      <div class="project-top"><span class="project-num">01 / AI SYSTEMS</span><span class="project-icon">◎</span></div>
+      <h3>Multi-Agent AI Mock Interview Coach</h3>
+      <p>An AI-powered interview practice system designed to simulate structured interviews, generate relevant questions, evaluate responses, and deliver actionable feedback. Built to make interview preparation more realistic, repeatable, and measurable.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Large Language Models</span><span class="tag">LangGraph</span><span class="tag">Multi-Agent System</span><span class="tag">Voice Interview</span></div>
+      <div class="project-actions">
+        <a class="project-link" href="https://github.com/parthdeorukhkar/multi-agent-ai-interview-system" target="_blank" rel="noopener noreferrer">View source code ↗</a>
+        <span class="project-link project-note">Architecture · Interview flow · Feedback</span>
+      </div>
+    </article>
+    <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="ai data fde">
+      <div class="project-top"><span class="project-num">02 / RETRIEVAL + INSIGHTS</span><span class="project-icon">⌘</span></div>
+      <h3>RAG Financial Document Analyzer</h3>
+      <p>A document question-answering app that combines retrieval with language models so users can query financial documents and find relevant context instead of manually scanning every page.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">RAG</span><span class="tag">ChromaDB</span><span class="tag">Streamlit</span></div>
+      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=Financial%20Document%20Analyzer">Ask for demo ↗</a>
+    </article>
+    <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="data gtm fde">
+      <div class="project-top"><span class="project-num">03 / MARKETING INTELLIGENCE</span><span class="project-icon">↗</span></div>
+      <h3>Marketing Analytics WhatsApp Bot</h3>
+      <p>A conversational analytics workflow for marketing campaign data. Ask business questions, translate intent into validated SQL, and surface campaign spend and conversion insights through a familiar chat interface.</p>
+      <div class="tags"><span class="tag">FastAPI</span><span class="tag">SQL</span><span class="tag">LLM</span><span class="tag">Twilio</span></div>
+      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=Marketing%20Analytics%20Bot">Ask for demo ↗</a>
+    </article>
+    <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="ai fde automation">
+      <div class="project-top"><span class="project-num">04 / PEOPLE OPS</span><span class="project-icon">✳</span></div>
+      <h3>HR Automation System</h3>
+      <p>A recruitment workflow concept spanning resume intake, candidate shortlisting, HR review, interview scheduling, and candidate communication—with a retrieval-based assistant to help HR query candidate information.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">RAG</span><span class="tag">Workflow design</span></div>
+      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=HR%20Automation%20System">Discuss the build ↗</a>
+    </article>
+    <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="data ai">
+      <div class="project-top"><span class="project-num">05 / PATTERN DISCOVERY</span><span class="project-icon">⌁</span></div>
+      <h3>Social Media Hashtag Clustering</h3>
+      <p>Explored hashtag co-occurrence and association patterns to uncover which topics travel together, using support, lift, similarity, and clustering techniques to turn noisy social data into patterns.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Apriori</span><span class="tag">Clustering</span></div>
+      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=Hashtag%20Clustering">Ask about the project ↗</a>
+    </article>
+    <article class="project" tabindex="0" role="button" aria-label="Open project details" data-roles="automation fde gtm">
+      <div class="project-top"><span class="project-num">06 / BUSINESS AUTOMATION</span><span class="project-icon">▣</span></div>
+      <h3>QuickBooks Workflow Automation</h3>
+      <p>Automated accounting operations using UiPath and API integrations, including invoice and customer workflows—connecting repetitive business processes with dependable automation.</p>
+      <div class="tags"><span class="tag">UiPath</span><span class="tag">RPA</span><span class="tag">APIs</span><span class="tag">QuickBooks</span></div>
+      <a class="project-link" href="mailto:parthdeorukhkar2@gmail.com?subject=QuickBooks%20Automation">Discuss the workflow ↗</a>
+    </article>
+  </div>
+</div>
+</section>
+<section id="about">
+<div class="wrap">
+  <div class="section-head"><h2>One brain.<br>Many toolkits.</h2><p>My edge is connecting technical execution to the real-world problem it needs to solve.</p></div>
+  <div class="about-grid">
+    <div class="about-card"><span class="mono">THE OPERATING SYSTEM</span><h3>Understand → Build → Measure → Improve.</h3><p>I like getting close to the problem, finding the signal in the noise, shipping a practical solution, and using feedback to make it better. That can mean an analytics query, an AI workflow, or a business process that finally stops being manual.</p></div>
+    <div class="skill-explosion">
+      <div class="skill-controls" role="group" aria-label="Filter skills by category">
+        <button class="skill-filter active" data-skill-filter="all" type="button">All skills · 44</button>
+        <button class="skill-filter" data-skill-filter="ai" type="button">AI / ML</button>
+        <button class="skill-filter" data-skill-filter="data" type="button">Data</button>
+        <button class="skill-filter" data-skill-filter="engineering" type="button">Engineering</button>
+        <button class="skill-filter" data-skill-filter="automation" type="button">Automation + GTM</button>
+        <button class="skill-filter" data-skill-filter="product" type="button">Product</button>
+      </div>
+      <div class="skill-cloud" id="skillCloud" aria-label="Interactive skill bubbles">
+        <span class="skill-core">POLY<br>MATH<small>TOOLKIT v1.0</small></span>
+        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.00s" title="Click to pop this skill">Python</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.13s" title="Click to pop this skill">Machine Learning</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.26s" title="Click to pop this skill">Large Language Models</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.39s" title="Click to pop this skill">Retrieval-Augmented Generation</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.52s" title="Click to pop this skill">SQL</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.65s" title="Click to pop this skill">Pandas</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.78s" title="Click to pop this skill">FastAPI</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.00s" title="Click to pop this skill">Streamlit</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.13s" title="Click to pop this skill">AI Agents</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.26s" title="Click to pop this skill">LangGraph</button>\n        <button class="skill" type="button" data-category="automation" aria-pressed="false" style="--delay:0.39s" title="Click to pop this skill">UiPath / RPA</button>\n        <button class="skill" type="button" data-category="automation" aria-pressed="false" style="--delay:0.52s" title="Click to pop this skill">Workflow Automation</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.65s" title="Click to pop this skill">API Integrations</button>\n        <button class="skill" type="button" data-category="product" aria-pressed="false" style="--delay:0.78s" title="Click to pop this skill">Problem Solving</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.00s" title="Click to pop this skill">Deep Learning</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.13s" title="Click to pop this skill">PyTorch</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.26s" title="Click to pop this skill">TensorFlow</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.39s" title="Click to pop this skill">Scikit-learn</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.52s" title="Click to pop this skill">LangChain</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.65s" title="Click to pop this skill">Prompt Engineering</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.78s" title="Click to pop this skill">NumPy</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.00s" title="Click to pop this skill">Data Cleaning</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.13s" title="Click to pop this skill">Power BI</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.26s" title="Click to pop this skill">Data Visualization</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.39s" title="Click to pop this skill">Exploratory Data Analysis</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.52s" title="Click to pop this skill">Statistics</button>\n        <button class="skill" type="button" data-category="data" aria-pressed="false" style="--delay:0.65s" title="Click to pop this skill">Excel</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.78s" title="Click to pop this skill">REST APIs</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.00s" title="Click to pop this skill">JavaScript</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.13s" title="Click to pop this skill">Node.js</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.26s" title="Click to pop this skill">HTML/CSS</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.39s" title="Click to pop this skill">Git & GitHub</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.52s" title="Click to pop this skill">MySQL</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.65s" title="Click to pop this skill">MongoDB</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.78s" title="Click to pop this skill">AWS</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.00s" title="Click to pop this skill">Docker</button>\n        <button class="skill" type="button" data-category="ai" aria-pressed="false" style="--delay:0.13s" title="Click to pop this skill">FAISS</button>\n        <button class="skill" type="button" data-category="automation" aria-pressed="false" style="--delay:0.26s" title="Click to pop this skill">n8n</button>\n        <button class="skill" type="button" data-category="automation" aria-pressed="false" style="--delay:0.39s" title="Click to pop this skill">Marketing Analytics</button>\n        <button class="skill" type="button" data-category="engineering" aria-pressed="false" style="--delay:0.52s" title="Click to pop this skill">Webhooks</button>\n        <button class="skill" type="button" data-category="product" aria-pressed="false" style="--delay:0.65s" title="Click to pop this skill">Go-To-Market Strategy</button>\n        <button class="skill" type="button" data-category="product" aria-pressed="false" style="--delay:0.78s" title="Click to pop this skill">Product Thinking</button>\n        <button class="skill" type="button" data-category="product" aria-pressed="false" style="--delay:0.00s" title="Click to pop this skill">Product Requirements Documents</button>\n        <button class="skill" type="button" data-category="product" aria-pressed="false" style="--delay:0.13s" title="Click to pop this skill">Rapid Prototyping</button>\n      </div>
+      <div class="skill-legend" aria-label="Skill category color legend">
+        <span><i class="legend-dot" style="background:var(--pink)"></i>AI / ML</span>
+        <span><i class="legend-dot" style="background:var(--blue)"></i>Data</span>
+        <span><i class="legend-dot" style="background:var(--green)"></i>Engineering</span>
+        <span><i class="legend-dot" style="background:var(--yellow)"></i>Automation</span>
+        <span><i class="legend-dot" style="background:#f7b85a"></i>Product</span>
+      </div>
+      <p class="skill-hint">Tap a bubble to pop it · filter to zoom into a toolkit ✳</p>
+    </div>
+  </div>
+</div>
+</section>
+<section id="experience">
+<div class="wrap">
+  <div class="section-head"><h2>Where I’ve<br>put in the work.</h2><p>Hands-on experience building automation and data-driven applications—not just collecting buzzwords.</p></div>
+  <div class="timeline">
+    <article class="experience">
+      <div><div class="exp-date">2025 · INTERNSHIP</div><p class="note">Dates can be refined if needed</p></div>
+      <div><h3>Software Intern</h3><div class="company">Infintrix Globals Limited</div><ul><li>Developed intelligent automation and data-driven enterprise application workflows.</li><li>Built a Medical Report Analysis System using machine learning techniques.</li><li>Implemented QuickBooks automation using UiPath robotic process automation and application programming interface integrations.</li><li>Designed backend workflows with an emphasis on scalability and reducing repetitive operational effort.</li></ul><div class="tags"><span class="tag">Machine Learning</span><span class="tag">UiPath</span><span class="tag">API Integration</span><span class="tag">Backend Workflows</span></div></div>
+    </article>
+  </div>
+</div>
+</section>
+<section id="certifications">
+<div class="wrap">
+  <div class="section-head"><h2>Proof of learning.</h2><p>Courses and credentials that complement the projects. Add credential links when you publish.</p></div>
+  <div class="cert-grid">
+    <article class="cert"><div class="issuer">IBM</div><h3>Exploratory Data Analysis for Machine Learning</h3><div class="mono">Data · Feature understanding</div></article>
+    <article class="cert"><div class="issuer">DeepLearning.AI</div><h3>Supervised Machine Learning: Regression and Classification</h3><div class="mono">Machine learning</div></article>
+    <article class="cert"><div class="issuer">NVIDIA</div><h3>Fundamentals of Deep Learning</h3><div class="mono">Deep learning</div></article>
+    <article class="cert"><div class="issuer">NVIDIA</div><h3>Building Transformer-Based NLP Applications</h3><div class="mono">Natural language processing</div></article>
+    <article class="cert"><div class="issuer">NVIDIA</div><h3>Building LLM Applications with Prompt Engineering</h3><div class="mono">Large language models</div></article>
+  </div>
+  <p class="note" style="margin-top:22px">Credential verification links and completion dates are intentionally omitted until confirmed.</p>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="wrap contact-inner">
+  <div><div class="mono">Got a problem worth solving?</div><h2>Let’s build<br>something useful.</h2><p>Open to conversations around AI engineering, data, automation, forward-deployed work, and go-to-market engineering.</p><a class="btn secondary" href="mailto:parthdeorukhkar2@gmail.com">Email me ↗</a></div>
+  <div class="contact-links"><a href="mailto:parthdeorukhkar2@gmail.com">parthdeorukhkar2@gmail.com ↗</a><a href="https://github.com/parthdeorukhkar" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/parth-deorukhkar" target="_blank" rel="noreferrer">LinkedIn ↗</a><p class="note">Replace or verify profile URLs before launch.</p></div>
+</div>
+</section>
+
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <section class="project-dialog" role="dialog" aria-modal="true" aria-labelledby="projectDialogTitle" tabindex="-1">
+    <div class="project-dialog-head">
+      <div><div class="mono" id="projectDialogKicker">PROJECT DEEP DIVE</div><h2 id="projectDialogTitle">Project title</h2></div>
+      <button class="project-close" type="button" id="projectModalClose" aria-label="Close project details">×</button>
+    </div>
+    <div class="project-detail-grid">
+      <article class="project-detail-block full"><h3>01 / Overview</h3><p id="projectDialogDescription"></p></article>
+      <article class="project-detail-block full"><h3>02 / Architecture</h3><p class="note">High-level workflow based on the project description; update the steps if your implementation differs.</p><div class="architecture-flow" id="projectDialogArchitecture"></div></article>
+      <article class="project-detail-block"><h3>03 / Technology stack</h3><div class="tags" id="projectDialogStack"></div></article>
+      <article class="project-detail-block"><h3>04 / What it demonstrates</h3><ul id="projectDialogHighlights"></ul></article>
+      <article class="project-detail-block full"><h3>05 / Demo video</h3><div class="demo-frame" id="projectDemoFrame"><div class="demo-placeholder"><strong>Demo video slot</strong><p>Add a YouTube video ID to the project details in the page script to embed your walkthrough here.</p></div></div></article>
+    </div>
+    <div class="dialog-actions"><a class="btn" id="projectDialogRepo" href="#" target="_blank" rel="noopener noreferrer">View source code ↗</a><a class="btn secondary" id="projectDialogLive" href="#" target="_blank" rel="noopener noreferrer" hidden>Open live demo ↗</a></div>
+  </section>
+</div>
+
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> PARTH DEORUKHKAR</span><span>MADE WITH CURIOSITY + A LITTLE CHAOS ✳</span><a href="#top">BACK TO TOP ↑</a></footer>
+<script>
+const filters = document.querySelectorAll('.filter');
+const projects = document.querySelectorAll('.project');
+filters.forEach(button => button.addEventListener('click', () => {
+  filters.forEach(b => b.classList.toggle('active', b === button));
+  const filter = button.dataset.filter;
+  projects.forEach(project => {
+    project.hidden = filter !== 'all' && !project.dataset.roles.split(' ').includes(filter);
+  });
+}));
+const skillFilters = document.querySelectorAll('.skill-filter');
+const skillBubbles = document.querySelectorAll('.skill:not(.skill-core)');
+skillFilters.forEach(button => button.addEventListener('click', () => {
+  skillFilters.forEach(b => b.classList.toggle('active', b === button));
+  const category = button.dataset.skillFilter;
+  skillBubbles.forEach(bubble => {
+    bubble.hidden = category !== 'all' && bubble.dataset.category !== category;
+    if (bubble.hidden) {
+      bubble.classList.remove('popped');
+      bubble.setAttribute('aria-pressed', 'false');
+    }
+  });
+}));
+skillBubbles.forEach(bubble => bubble.addEventListener('click', () => {
+  const popped = bubble.classList.toggle('popped');
+  bubble.setAttribute('aria-pressed', String(popped));
+}));
+
+const projectDetails = {
+  "Multi-Agent AI Mock Interview Coach": {
+    kicker: "01 / AI SYSTEMS",
+    description: "An AI-powered interview practice system designed to simulate structured interviews, generate relevant questions, evaluate responses, and deliver actionable feedback. The live microphone/transcription workflow and exact agent responsibilities should be described according to the deployed implementation.",
+    architecture: ["Candidate starts interview", "Interview question flow", "Voice / text response", "AI evaluation", "Feedback to candidate"],
+    stack: ["Python", "Large Language Models", "LangGraph", "Multi-Agent System", "Voice / Transcription"],
+    highlights: ["Voice-based interview practice", "Specialized AI-agent workflow", "Structured response evaluation and feedback", "Deployment and latency trade-offs"],
+    repo: "https://github.com/parthdeorukhkar/multi-agent-ai-interview-system",
+    live: "",
+    videoId: ""
+  },
+  "RAG Financial Document Analyzer": {
+    kicker: "02 / RETRIEVAL + INSIGHTS",
+    description: "A document question-answering app that combines retrieval with a language model so users can query financial documents and find relevant context instead of manually scanning every page.",
+    architecture: ["Financial documents", "Text extraction and chunking", "Vector index", "Relevant context retrieval", "Answer with context"],
+    stack: ["Python", "Retrieval-Augmented Generation", "ChromaDB", "Streamlit", "Embeddings"],
+    highlights: ["Document-grounded question answering", "Semantic retrieval", "Faster access to relevant financial context"],
+    repo: "",
+    live: "",
+    videoId: ""
+  },
+  "Marketing Analytics WhatsApp Bot": {
+    kicker: "03 / MARKETING INTELLIGENCE",
+    description: "A conversational analytics workflow for marketing campaign data. Users ask business questions, the system translates intent into validated SQL, and campaign spend and conversion insights are surfaced through a familiar chat interface.",
+    architecture: ["WhatsApp question", "Message webhook", "Question-to-SQL workflow", "SQL validation and query", "Analytics response"],
+    stack: ["FastAPI", "SQL", "Large Language Models", "Twilio", "Webhooks"],
+    highlights: ["Conversational business analytics", "Validated SQL workflow", "Marketing spend and conversion insights"],
+    repo: "",
+    live: "",
+    videoId: ""
+  },
+  "HR Automation System": {
+    kicker: "04 / PEOPLE OPS",
+    description: "A recruitment workflow concept spanning resume intake, candidate shortlisting, HR review, interview scheduling, and candidate communication, with a retrieval-based assistant to help HR query candidate information.",
+    architecture: ["Resume intake", "Candidate data store", "Shortlisting and HR review", "Interview scheduling", "Candidate communication"],
+    stack: ["Python", "Natural Language Processing", "Retrieval-Augmented Generation", "Workflow Automation"],
+    highlights: ["Recruitment workflow orchestration", "Human review before key decisions", "Candidate information retrieval"],
+    repo: "",
+    live: "",
+    videoId: ""
+  },
+  "Social Media Hashtag Clustering": {
+    kicker: "05 / PATTERN DISCOVERY",
+    description: "An analysis of hashtag co-occurrence and association patterns to uncover topics that travel together, using association rules, similarity, and clustering techniques to turn noisy social data into patterns.",
+    architecture: ["Social text data", "Cleaning and tokenization", "TF-IDF / similarity", "Association and clustering", "Pattern insights"],
+    stack: ["Python", "Pandas", "Apriori", "Clustering", "TF-IDF"],
+    highlights: ["Hashtag co-occurrence analysis", "Association-rule discovery", "Similarity and clustering methods"],
+    repo: "",
+    live: "",
+    videoId: ""
+  },
+  "QuickBooks Workflow Automation": {
+    kicker: "06 / BUSINESS AUTOMATION",
+    description: "Automated accounting operations using UiPath and application programming interface integrations, including invoice and customer workflows, connecting repetitive business processes with dependable automation.",
+    architecture: ["Business event / request", "UiPath workflow", "QuickBooks integration", "Record creation or update", "Status / result"],
+    stack: ["UiPath", "Robotic Process Automation", "APIs", "QuickBooks"],
+    highlights: ["Invoice and customer workflows", "Business application integration", "Reduction of repetitive manual steps"],
+    repo: "",
+    live: "",
+    videoId: ""
+  }
+};
+
+const projectModal = document.getElementById('projectModal');
+const projectDialog = projectModal.querySelector('.project-dialog');
+const projectClose = document.getElementById('projectModalClose');
+let lastFocusedProject = null;
+
+function openProjectDetails(card) {
+  const title = card.querySelector('h3')?.textContent.trim();
+  const details = projectDetails[title];
+  if (!details) return;
+  lastFocusedProject = card;
+  document.getElementById('projectDialogKicker').textContent = details.kicker || 'PROJECT DEEP DIVE';
+  document.getElementById('projectDialogTitle').textContent = title;
+  document.getElementById('projectDialogDescription').textContent = details.description;
+
+  const architecture = document.getElementById('projectDialogArchitecture');
+  architecture.replaceChildren();
+  details.architecture.forEach((step, index) => {
+    if (index > 0) {
+      const arrow = document.createElement('span');
+      arrow.className = 'architecture-arrow';
+      arrow.setAttribute('aria-hidden', 'true');
+      arrow.textContent = '→';
+      architecture.appendChild(arrow);
+    }
+    const node = document.createElement('div');
+    node.className = 'architecture-step';
+    node.textContent = step;
+    architecture.appendChild(node);
+  });
+
+  const stack = document.getElementById('projectDialogStack');
+  stack.replaceChildren();
+  details.stack.forEach(item => {
+    const tag = document.createElement('span');
+    tag.className = 'tag';
+    tag.textContent = item;
+    stack.appendChild(tag);
+  });
+
+  const highlights = document.getElementById('projectDialogHighlights');
+  highlights.replaceChildren();
+  details.highlights.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    highlights.appendChild(li);
+  });
+
+  const demo = document.getElementById('projectDemoFrame');
+  demo.replaceChildren();
+  if (details.videoId) {
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(details.videoId);
+    iframe.title = title + ' demo video';
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    demo.appendChild(iframe);
+  } else {
+    const placeholder = document.createElement('div');
+    placeholder.className = 'demo-placeholder';
+    const strong = document.createElement('strong');
+    strong.textContent = 'Demo video coming soon';
+    const p = document.createElement('p');
+    p.textContent = 'Add a YouTube video ID in this project’s videoId field in the page script to embed the walkthrough.';
+    placeholder.append(strong, p);
+    demo.appendChild(placeholder);
+  }
+
+  const repo = document.getElementById('projectDialogRepo');
+  const projectRepo = details.repo || card.querySelector('a.project-link[href^="https://github.com/"]')?.href || '';
+  repo.href = projectRepo || 'https://github.com/parthdeorukhkar';
+  repo.textContent = projectRepo ? 'View source code ↗' : 'View GitHub profile ↗';
+  const live = document.getElementById('projectDialogLive');
+  if (details.live) {
+    live.href = details.live;
+    live.hidden = false;
+  } else {
+    live.hidden = true;
+    live.removeAttribute('href');
+  }
+
+  projectModal.classList.add('open');
+  projectModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  projectClose.focus();
+}
+
+function closeProjectDetails() {
+  projectModal.classList.remove('open');
+  projectModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  const frame = document.getElementById('projectDemoFrame');
+  frame.replaceChildren();
+  if (lastFocusedProject) lastFocusedProject.focus();
+}
+document.querySelectorAll('.project').forEach(card => {
+  card.addEventListener('click', event => {
+    if (event.target.closest('a, button')) return;
+    openProjectDetails(card);
+  });
+  card.addEventListener('keydown', event => {
+    if ((event.key === 'Enter' || event.key === ' ') && event.target === card) {
+      event.preventDefault();
+      openProjectDetails(card);
+    }
+  });
+});
+projectClose.addEventListener('click', closeProjectDetails);
+projectModal.addEventListener('click', event => {
+  if (event.target === projectModal) closeProjectDetails();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && projectModal.classList.contains('open')) closeProjectDetails();
+});
+
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
